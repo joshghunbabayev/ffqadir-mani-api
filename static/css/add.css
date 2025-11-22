@@ -1,0 +1,629 @@
+.all_add_cc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.all_add_cc form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.all_add_cc form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.all_add_cc form .gonder {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.all_add_cc form .gonder:hover {
+  background-color: #0056b3;
+}
+
+.all_add_cc .all_add {
+  display: flex;
+  gap: 10px;
+}
+
+.all_add_cc .all_add input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.all_add_cc .all_add button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.all_add_cc .all_add button:hover {
+  background-color: #218838;
+}
+
+.all_add_cc .all_add button:nth-child(3) {
+  background-color: #6c757d;
+}
+
+.all_add_cc .all_add button:nth-child(3):hover {
+  background-color: #5a6268;
+}
+
+.all_add_cc .all_add button:nth-child(4) {
+  background-color: #007bff;
+}
+
+.all_add_cc .all_add button:nth-child(4):hover {
+  background-color: #0056b3;
+}
+
+.all_add_cc .all_add button:nth-child(5) {
+  background-color: #ffc107;
+}
+
+.all_add_cc .all_add button:nth-child(5):hover {
+  background-color: #e0a800;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+}
+
+.table thead tr th {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.table tbody tr td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.table tbody tr td:nth-child(1) {
+  text-align: left;
+}
+
+.table tbody tr td:nth-child(2) {
+  text-align: center;
+}
+
+.table tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+.table tbody tr td:nth-child(3) button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table tbody tr td:nth-child(3) button:hover {
+  background-color: #c82333;
+}
+
+.table tbody tr td:nth-child(3) button:nth-child(2) {
+  background-color: #17a2b8;
+}
+
+.table tbody tr td:nth-child(3) button:nth-child(2):hover {
+  background-color: #138496;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+#add_pole .container .all_add_cc form {
+  display: flex;
+  flex-direction: column;
+}
+
+#add_pole .container .all_add_cc form input {
+  margin-bottom: 10px;
+}
+
+#add_pole .container .all_add_cc form button {
+  align-self: flex-end;
+}
+
+#add_pole .container .all_add_cc .all_add {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#add_pole .container .all_add_cc .all_add button {
+  margin-left: 5px;
+}
+
+#add_pole .container #productSections {
+  margin-top: 20px;
+}
+
+#add_pole .container #productSections h2 {
+  margin-top: 20px;
+}
+
+#add_pole .container #productSections table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#add_pole .container #productSections table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+#add_pole .container #productSections table tr td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#add_pole .container #productSections table tr td:nth-child(1) {
+  text-align: left;
+  flex: 1;
+}
+
+#add_pole .container #productSections table tr td:nth-child(2) {
+  text-align: center;
+  flex: 1;
+}
+
+#add_pole .container #productSections table tr td:nth-child(3) {
+  text-align: right;
+  flex: 1;
+}
+
+#tables .container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tables .container table thead tr th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#tables .container table thead tr th:nth-child(1) {
+  text-align: left;
+  flex: 1;
+}
+
+#tables .container table thead tr th:nth-child(2) {
+  text-align: center;
+  flex: 1;
+}
+
+#tables .container table thead tr th:nth-child(3) {
+  text-align: right;
+  flex: 1;
+}
+
+#tables .container table tbody tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tables .container table tbody tr td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#tables .container table tbody tr td:nth-child(1) {
+  text-align: left;
+  flex: 1;
+}
+
+#tables .container table tbody tr td:nth-child(2) {
+  text-align: center;
+  flex: 1;
+}
+
+#tables .container table tbody tr td:nth-child(3) {
+  text-align: right;
+  flex: 1;
+}
+
+#productSections .fan-section {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#productSections .fan-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#productSections .fan-section table.table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#productSections .fan-section table.table thead {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+#productSections .fan-section table.table thead th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: bold;
+}
+
+#productSections .fan-section table.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#productSections .fan-section table.table tbody tr td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#productSections .fan-section table.table tbody tr td img {
+  max-width: 120px;
+  max-height: 100px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+#productSections .fan-section table.table tbody tr button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#productSections .fan-section table.table tbody tr button:hover {
+  background-color: #0056b3;
+}
+
+#productSections .fan-section table.table tbody tr button i {
+  margin-right: 5px;
+}
+
+#productSections .fan-section table.table tbody tr button .fa-edit {
+  color: #17a2b8;
+}
+
+#add_pole {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+#add_pole .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#add_pole .all_add_cc {
+  margin-bottom: 2rem;
+}
+
+#add_pole .all_add_cc form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#add_pole .all_add_cc form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#add_pole .all_add_cc form input::placeholder {
+  color: #6c757d;
+}
+
+#add_pole .all_add_cc form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#add_pole .all_add_cc form .gonder {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add_pole .all_add_cc form .gonder:hover {
+  background-color: #0056b3;
+}
+
+#add_pole .all_add_cc .all_add {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#add_pole .all_add_cc .all_add input#xatars {
+  width: 100%;
+}
+
+#add_pole .all_add_cc .all_add button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add_pole .all_add_cc .all_add #axtarBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#add_pole .all_add_cc .all_add #axtarBtn:hover {
+  background-color: #218838;
+}
+
+#add_pole .all_add_cc .all_add #az {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#add_pole .all_add_cc .all_add #az:hover {
+  background-color: #0056b3;
+}
+
+#add_pole .all_add_cc .all_add #za {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#add_pole .all_add_cc .all_add #za:hover {
+  background-color: #c82333;
+}
+
+#add_pole .all_add_cc .all_add #defa {
+  background-color: #ffc107;
+  color: #000;
+}
+
+#add_pole .all_add_cc .all_add #defa:hover {
+  background-color: #e0a800;
+}
+
+#add_pole h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+#add_pole .fan-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add_pole .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#add_pole .table th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #0056b3;
+}
+
+#add_pole .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#add_pole .table img {
+  border-radius: 4px;
+}
+
+#add_pole .table button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add_pole .table button:hover {
+  background-color: #c82333;
+}
+
+#cafe_section,
+#wolt_section {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+#cafe_section .container,
+#wolt_section .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#cafe_section form,
+#wolt_section form {
+  margin-bottom: 2rem;
+}
+
+#cafe_section form input,
+#wolt_section form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#cafe_section form input::placeholder,
+#wolt_section form input::placeholder {
+  color: #6c757d;
+}
+
+#cafe_section form input:focus,
+#wolt_section form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#cafe_section form .gonder,
+#wolt_section form .gonder {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cafe_section form .gonder:hover,
+#wolt_section form .gonder:hover {
+  background-color: #0056b3;
+}
+
+#cafe_section .wolt-section,
+#cafe_section .cafe-section,
+#wolt_section .wolt-section,
+#wolt_section .cafe-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cafe_section .wolt-section h2,
+#cafe_section .cafe-section h2,
+#wolt_section .wolt-section h2,
+#wolt_section .cafe-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+#cafe_section .wolt-section .table,
+#cafe_section .cafe-section .table,
+#wolt_section .wolt-section .table,
+#wolt_section .cafe-section .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#cafe_section .wolt-section .table th,
+#cafe_section .cafe-section .table th,
+#wolt_section .wolt-section .table th,
+#wolt_section .cafe-section .table th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #0056b3;
+}
+
+#cafe_section .wolt-section .table td,
+#cafe_section .cafe-section .table td,
+#wolt_section .wolt-section .table td,
+#wolt_section .cafe-section .table td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#cafe_section .wolt-section .table img,
+#cafe_section .cafe-section .table img,
+#wolt_section .wolt-section .table img,
+#wolt_section .cafe-section .table img {
+  border-radius: 4px;
+}
+
+#cafe_section .wolt-section .table button,
+#cafe_section .cafe-section .table button,
+#wolt_section .wolt-section .table button,
+#wolt_section .cafe-section .table button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cafe_section .wolt-section .table button:hover,
+#cafe_section .cafe-section .table button:hover,
+#wolt_section .wolt-section .table button:hover,
+#wolt_section .cafe-section .table button:hover {
+  background-color: #c82333;
+}

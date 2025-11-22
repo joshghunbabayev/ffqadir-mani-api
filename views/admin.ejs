@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/main-api/css/add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main>
+        <section id="add_pole">
+            <div class="container">
+
+                <div class="all_add_cc">
+                    <form id="myPubgForm">
+                        <input type="text" placeholder="Title" id="titlePubgInp" required>
+                        <input type="text" placeholder="Price" id="pricePubgInp" required>
+                        <button class="gonder" type="submit">Add Pubg Product</button>
+                    </form>
+                    <form id="myTiktokForm">
+                        <input type="text" placeholder="Title" id="titleTiktokInp" required>
+                        <input type="text" placeholder="Price" id="priceTiktokInp" required>
+                        <button class="gonder" type="submit">Add Tiktok Product</button>
+                    </form>
+                    <form id="myFanForm">
+                        <input type="text" placeholder="Title" id="titleFanInp" required>
+                        <input type="text" placeholder="Price" id="priceFanInp" required>
+                        <input type="text" placeholder="Image URL" id="imageFanInp" required>
+                        <button class="gonder" type="submit">Add Fan Product</button>
+                    </form>
+                </div>
+                <div id="productSections">
+                    <h2>Pubg Products</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsPubg"></tbody>
+                    </table>
+                    <h2>Tiktok Products</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsTiktok"></tbody>
+                    </table>
+                    <div class="fan-section">
+                        <h2>Fan Products</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsFan"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yeni Wolt ve Cafe Formları ve Ürün Listeleri -->
+        <section id="wolt_section">
+            <div class="container">
+                <form id="woltForm">
+                    <input type="text" placeholder="Title" id="titleWoltInp" required>
+                    <input type="text" placeholder="Price" id="priceWoltInp" required>
+                    <input type="text" placeholder="Description" id="descriptionWoltInp" required>
+                    <input type="text" placeholder="Image URL" id="imageWoltInp" required>
+                    <button class="gonder" type="submit">Add Wolt Product</button>
+                </form>
+                <div class="wolt-section">
+                    <h2>Wolt Products</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsWolt"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="cafe_section">
+            <div class="container">
+                <form id="cafeForm">
+                    <input type="text" placeholder="Title" id="titleCafeInp" required>
+                    <input type="text" placeholder="Price" id="priceCafeInp" required>
+                    <input type="text" placeholder="Description" id="descriptionCafeInp" required>
+                    <button class="gonder" type="submit">Add Cafe Product</button>
+                </form>
+                <div class="cafe-section">
+                    <h2>Cafe Products</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsCafe"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/main-api/js/add.js"></script>
+</body>
+
+</html>
