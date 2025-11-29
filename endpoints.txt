@@ -1,0 +1,19 @@
+_id -> id
+ID -> pubgId
+
+GET /ff-main/invoice
+    query -> status (active, archived, deleted)
+
+    /ff-main/invoice?status=active
+
+POST /ff-main/invoice/new
+    (photo)
+    title, price, count, description, pubgId
+
+PUT /ff-main/invoice/one/:id/pay
+
+DELETE /ff-main/invoice/all/soft
+
+burdan sonra cloudddan silinir, base64 den istifade et
+
+DELETE /ff-main/invoice/all/hard

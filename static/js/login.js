@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     const formData = new FormData(form);
     var formEntries = Object.fromEntries(formData.entries());
 
-    let res = await fetch(`/main-api/admin/login`, {
+    let res = await fetch(`/ff-main/admin/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     console.log(res);
 
     if (res.status === 200) {
-        window.location.href = '/main-api/admin';
+        window.location.href = '/ff-main/admin';
     }else if (res.status === 429) {
         errorMessage.innerText = 'Too many failed login attempts. Please try again later.';
         errorMessage.style.display = 'block';

@@ -31,7 +31,7 @@ const defa = document.getElementById('defa');
 
 function postPubgProduct(e) {
     e.preventDefault();
-    axios.post('/main-api/game/pubg', {
+    axios.post('/ff-main/game/pubg', {
         title: titlePubgInp.value,
         price: pricePubgInp.value,
     })
@@ -43,7 +43,7 @@ function postPubgProduct(e) {
 
 function postTiktokProduct(e) {
     e.preventDefault();
-    axios.post('/main-api/game/tiktok', {
+    axios.post('/ff-main/game/tiktok', {
         title: titleTiktokInp.value,
         price: priceTiktokInp.value,
     })
@@ -55,7 +55,7 @@ function postTiktokProduct(e) {
 
 function postFanProduct(e) {
     e.preventDefault();
-    axios.post('/main-api/game/fan', {
+    axios.post('/ff-main/game/fan', {
         title: titleFanInp.value,
         price: priceFanInp.value,
         image: imageFanInp.value,
@@ -68,7 +68,7 @@ function postFanProduct(e) {
 
 function postWoltProduct(e) {
     e.preventDefault();
-    axios.post('/main-api/lounge/wolt', {
+    axios.post('/ff-main/lounge/wolt', {
         title: titleWoltInp.value,
         price: priceWoltInp.value,
         description: descriptionWoltInp.value,
@@ -82,7 +82,7 @@ function postWoltProduct(e) {
 
 function postCafeProduct(e) {
     e.preventDefault();
-    axios.post('/main-api/lounge/cafe', {
+    axios.post('/ff-main/lounge/cafe', {
         title: titleCafeInp.value,
         price: priceCafeInp.value,
         description: descriptionCafeInp.value,
@@ -107,11 +107,11 @@ function getData() {
     proListCafe.innerHTML = ``;
 
     axios.all([
-        axios.get('/main-api/game/pubg'),
-        axios.get('/main-api/game/tiktok'),
-        axios.get('/main-api/game/fan'),
-        axios.get('/main-api/lounge/wolt'),
-        axios.get('/main-api/lounge/cafe')
+        axios.get('/ff-main/game/pubg'),
+        axios.get('/ff-main/game/tiktok'),
+        axios.get('/ff-main/game/fan'),
+        axios.get('/ff-main/lounge/wolt'),
+        axios.get('/ff-main/lounge/cafe')
     ])
         .then(axios.spread((pubgRes, tiktokRes, fanRes, woltRes, cafeRes) => {
             let pubgData = pubgRes.data;
@@ -197,35 +197,35 @@ function getData() {
 getData();
 
 function deleteItemPubg(id) {
-    axios.delete(`/main-api/game/pubg/${id}`)
+    axios.delete(`/ff-main/game/pubg/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemTiktok(id) {
-    axios.delete(`/main-api/game/tiktok/${id}`)
+    axios.delete(`/ff-main/game/tiktok/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemFan(id) {
-    axios.delete(`/main-api/game/fan/${id}`)
+    axios.delete(`/ff-main/game/fan/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemWolt(id) {
-    axios.delete(`/main-api/lounge/wolt/${id}`)
+    axios.delete(`/ff-main/lounge/wolt/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemCafe(id) {
-    axios.delete(`/main-api/lounge/cafe/${id}`)
+    axios.delete(`/ff-main/lounge/cafe/${id}`)
         .then(res => {
             getData();
         });

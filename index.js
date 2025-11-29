@@ -4,6 +4,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import methodOverride from 'method-override';
+import { v2 as cloudinary } from "cloudinary";
 
 import adminRouter from './routers/admin.js';
 import gameRouter from './routers/game.js';
@@ -24,14 +25,21 @@ app.use(bodyParser.urlencoded({
 app.use(methodOverride('_method', {
     methods: ['POST', 'GET', 'PUT', 'DELETE']
 }));
-app.use("/main-api", express.static("static"));
+app.use("/ff-main", express.static("static"));
 app.set('view engine', 'ejs');
 
 app.listen(port, function () {
     console.log(`Server is running on port ${port}`);
 });
 
-app.use('/main-api/admin', adminRouter);
-app.use('/main-api/game', gameRouter);
-app.use('/main-api/lounge', loungeRouter);
-app.use('/main-api/invoice', invoiceRouter);
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key:    process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+    secure: true
+});
+
+app.use('/ff-main/admin', adminRouter);
+app.use('/ff-main/game', gameRouter);
+app.use('/ff-main/lounge', loungeRouter);
+app.use('/ff-main/invoice', invoiceRouter);
