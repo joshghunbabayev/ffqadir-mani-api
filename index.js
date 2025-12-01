@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 app.use(methodOverride('_method', {
     methods: ['POST', 'GET', 'PUT', 'DELETE']
 }));
-app.use("/ff-main", express.static("static"));
+app.use("/main-ffqad", express.static("static"));
 app.set('view engine', 'ejs');
 
 app.listen(port, function () {
@@ -39,7 +39,7 @@ cloudinary.config({
     secure: true
 });
 
-app.use('/ff-main/admin', adminRouter);
-app.use('/ff-main/game', gameRouter);
-app.use('/ff-main/lounge', loungeRouter);
-app.use('/ff-main/invoice', invoiceRouter);
+app.use('/main-ffqad/admin', adminRouter);
+app.use('/main-ffqad/game', gameRouter);
+app.use('/main-ffqad/lounge', loungeRouter);
+app.use('/main-ffqad/invoice', invoiceRouter);

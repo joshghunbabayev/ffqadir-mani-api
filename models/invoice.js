@@ -41,7 +41,7 @@ class Invoice {
 
             db.all(sql, params, (err, rows) => {
                 if (err) return reject(err);
-                resolve(data);
+                resolve(rows);
             });
         });
     }

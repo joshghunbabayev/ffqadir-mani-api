@@ -31,7 +31,7 @@ const defa = document.getElementById('defa');
 
 function postPubgProduct(e) {
     e.preventDefault();
-    axios.post('/ff-main/game/pubg', {
+    axios.post('/main-ffqad/game/pubg', {
         title: titlePubgInp.value,
         price: pricePubgInp.value,
     })
@@ -43,7 +43,7 @@ function postPubgProduct(e) {
 
 function postTiktokProduct(e) {
     e.preventDefault();
-    axios.post('/ff-main/game/tiktok', {
+    axios.post('/main-ffqad/game/tiktok', {
         title: titleTiktokInp.value,
         price: priceTiktokInp.value,
     })
@@ -55,7 +55,7 @@ function postTiktokProduct(e) {
 
 function postFanProduct(e) {
     e.preventDefault();
-    axios.post('/ff-main/game/fan', {
+    axios.post('/main-ffqad/game/fan', {
         title: titleFanInp.value,
         price: priceFanInp.value,
         image: imageFanInp.value,
@@ -68,7 +68,7 @@ function postFanProduct(e) {
 
 function postWoltProduct(e) {
     e.preventDefault();
-    axios.post('/ff-main/lounge/wolt', {
+    axios.post('/main-ffqad/lounge/wolt', {
         title: titleWoltInp.value,
         price: priceWoltInp.value,
         description: descriptionWoltInp.value,
@@ -82,7 +82,7 @@ function postWoltProduct(e) {
 
 function postCafeProduct(e) {
     e.preventDefault();
-    axios.post('/ff-main/lounge/cafe', {
+    axios.post('/main-ffqad/lounge/cafe', {
         title: titleCafeInp.value,
         price: priceCafeInp.value,
         description: descriptionCafeInp.value,
@@ -107,11 +107,11 @@ function getData() {
     proListCafe.innerHTML = ``;
 
     axios.all([
-        axios.get('/ff-main/game/pubg'),
-        axios.get('/ff-main/game/tiktok'),
-        axios.get('/ff-main/game/fan'),
-        axios.get('/ff-main/lounge/wolt'),
-        axios.get('/ff-main/lounge/cafe')
+        axios.get('/main-ffqad/game/pubg'),
+        axios.get('/main-ffqad/game/tiktok'),
+        axios.get('/main-ffqad/game/fan'),
+        axios.get('/main-ffqad/lounge/wolt'),
+        axios.get('/main-ffqad/lounge/cafe')
     ])
         .then(axios.spread((pubgRes, tiktokRes, fanRes, woltRes, cafeRes) => {
             let pubgData = pubgRes.data;
@@ -197,35 +197,35 @@ function getData() {
 getData();
 
 function deleteItemPubg(id) {
-    axios.delete(`/ff-main/game/pubg/${id}`)
+    axios.delete(`/main-ffqad/game/pubg/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemTiktok(id) {
-    axios.delete(`/ff-main/game/tiktok/${id}`)
+    axios.delete(`/main-ffqad/game/tiktok/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemFan(id) {
-    axios.delete(`/ff-main/game/fan/${id}`)
+    axios.delete(`/main-ffqad/game/fan/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemWolt(id) {
-    axios.delete(`/ff-main/lounge/wolt/${id}`)
+    axios.delete(`/main-ffqad/lounge/wolt/${id}`)
         .then(res => {
             getData();
         });
 }
 
 function deleteItemCafe(id) {
-    axios.delete(`/ff-main/lounge/cafe/${id}`)
+    axios.delete(`/main-ffqad/lounge/cafe/${id}`)
         .then(res => {
             getData();
         });

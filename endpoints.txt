@@ -1,19 +1,27 @@
 _id -> id
 ID -> pubgId
 
-GET /ff-main/invoice
+GET /main-ffqad/invoice
     query -> status (active, archived, deleted)
 
-    /ff-main/invoice?status=active
+    /main-ffqad/invoice?status=active
 
-POST /ff-main/invoice/new
+POST /main-ffqad/invoice/new
     (photo)
     title, price, count, description, pubgId
 
-PUT /ff-main/invoice/one/:id/pay
+PUT /main-ffqad/invoice/one/:id/pay
 
-DELETE /ff-main/invoice/all/soft
+DELETE /main-ffqad/invoice/all/soft
 
 burdan sonra cloudddan silinir, base64 den istifade et
 
-DELETE /ff-main/invoice/all/hard
+DELETE /main-ffqad/invoice/all/hard
+
+
+GET /main-ffqad/game/pubg
+GET /main-ffqad/game/tiktok
+GET /main-ffqad/game/fan
+
+GET /main-ffqad/lounge/wolt
+GET /main-ffqad/lounge/cafe

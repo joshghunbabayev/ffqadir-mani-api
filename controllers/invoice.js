@@ -5,7 +5,7 @@ import path from "path";
 import compressUntilUnderNMB from "../utils/compressUntilUnderNMB.js"; // sənin kompress funksiyan
 
 async function getAllInvoices(req, res) {
-    try {           "/ff-main/invoice?status=active"
+    try {           "/main-ffqad/invoice?status=active"
         const status = req.query.status; // active, archived, deleted
         const invoices = await Invoice.getAll(status);
         res.status(200).json(invoices);
